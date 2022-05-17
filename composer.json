@@ -15,7 +15,7 @@
     "require": {
         "bolt/common": "^1.0",
         "symfony/event-dispatcher": "^2.8 || ^3.0 || ^4.0",
-        "symfony/http-foundation": "^2.8 || ^3.0 || ^4.0",
+        "symfony/http-foundation": "dev-bolt3 as v2.8.52",
         "symfony/http-kernel": "^2.8 || ^3.0 || ^4.0",
         "symfony/polyfill-php70": "^1.0"
     },
@@ -49,5 +49,31 @@
             "vendor/bin/phpcbf",
             "vendor/bin/php-cs-fixer fix"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/symfony-yaml.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-filesystem.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-codingstyle.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/bolt-event-dispatcher.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/symfony-http-foundation.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Largo/Silex.git"
+        }
+    ]
 }
